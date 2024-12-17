@@ -197,7 +197,8 @@ footer {
     color: #fff; /* Warna teks footer menjadi putih */
     text-align: center; /* Menengahkan teks di dalam footer */
     padding: 10px 0; /* Memberikan padding pada footer */
-    position: relative; /* Menempatkan footer secara relatif */
+    position: sticky; /* Menempatkan footer secara relatif */
+    margin-top: auto; /* Dorong footer ke bawah */
     width: 100%; /* Mengatur lebar footer agar memenuhi seluruh lebar layar */
     bottom: 0; /* Menempatkan footer di bagian bawah */
 }
