@@ -50,7 +50,6 @@ header {
 
 .judul img {
     margin-top: 100px;
-    margin-bottom: 100px;
     object-fit: contain; /* Menjaga proporsi gambar */
     max-width: 100%; /* Membuat gambar responsif */
     transition: transform 0.4s ease-in-out; /* Transisi lembut untuk hover */
@@ -81,12 +80,13 @@ header {
 
 
 .card-container {
+    margin-top: 150px;
     display: flex; /* Menggunakan Flexbox untuk menata kartu */
     justify-content: flex-start; /* Menempatkan kartu ke kiri */
     align-items: center; /* Menyusun kartu secara vertikal di tengah */
     position: relative; /* Menempatkan elemen relatif untuk penataan lebih lanjut */
     height: auto; /* Tinggi otomatis tergantung konten */
-    margin-bottom: 50px; /* Menambahkan jarak bawah pada kontainer kartu */
+    margin-bottom: 100px; /* Menambahkan jarak bawah pada kontainer kartu */
     flex-wrap: wrap; /* Membuat kartu membungkus ke baris berikutnya jika ruang tidak cukup */
 }
 
