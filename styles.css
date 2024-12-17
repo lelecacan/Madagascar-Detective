@@ -12,6 +12,7 @@ body {
     flex-direction: column; /* Menyusun elemen halaman secara vertikal */
     justify-content: space-between; /* Menyebarkan elemen untuk mengisi ruang secara merata */
     min-height: 100vh; /* Memastikan halaman mengisi setidaknya seluruh tinggi layar */
+    height: 100%;
 }
 
 header {
