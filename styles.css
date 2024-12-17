@@ -260,9 +260,39 @@ footer {
         min-height: 100vh; /* Memastikan halaman mengisi setidaknya seluruh tinggi layar */
     }
 
+    #speaker-toggle {
+        position: absolute; /* Menempatkan tombol di posisi spesifik */
+        top: 10px; /* Jarak lebih kecil dari atas untuk memindahkan ikon ke atas */
+        z-index: 1000; /* Berikan nilai tinggi agar tombol berada di atas elemen lain */
+        left: 10px; /* Jarak dari kiri */
+        background: none;
+        border: none;
+        cursor: pointer;
+        font-size: 40px;
+        color: #333; /* Warna ikon */
+        transition: transform 0.4s cubic-bezier(0.5, 2, 1.5, 2); /* Menambahkan animasi transisi */
+    }
+
+    #speaker-icon{
+        top: 10px; /* Jarak lebih kecil dari atas untuk memindahkan ikon ke atas */
+    }
+    
+    #speaker-toggle:focus {
+        outline: none;
+    }
+    
+    #speaker-toggle i {
+        transition: color 0.3s ease;
+    }
+    
+    #speaker-toggle:hover i {
+        color: #fff; /* Warna ikon saat di-hover */
+        transform: scale(0.9); /* Membesarkan gambar saat di-hover */
+    }
+
     .judul{
         display: flex;
-        margin-top: 50px;
+        margin-top: 70px;
         margin-bottom: 20px;
         margin-left: 5px;
         position: relative;
