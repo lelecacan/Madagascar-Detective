@@ -252,6 +252,7 @@ footer {
         background-repeat: no-repeat; /* Menghindari pengulangan gambar latar */
         background-color: rgba(0, 0, 0, 0.5); /* Memberikan transparansi hitam di latar belakang */
         background-blend-mode: overlay; /* Menggabungkan warna latar dengan gambar */
+        background-attachment: fixed; /* Latar belakang tetap */
         margin: 0; /* Menghilangkan margin default dari browser */
         display: flex; /* Menggunakan Flexbox untuk layout halaman */
         flex-direction: column; /* Menyusun elemen halaman secara vertikal */
@@ -262,7 +263,7 @@ footer {
     .judul{
         display: flex;
         margin-top: 50px;
-        margin-bottom: 50px;
+        margin-bottom: 20px;
         margin-left: 5px;
         position: relative;
         justify-content: center;
