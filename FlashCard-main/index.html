@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flashcard Game</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Menghubungkan file CSS eksternal untuk gaya halaman -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet"> 
+    <!-- mengambil ikon dari library Font Awesome dari CDNs -->
+    <link rel="icon" href="path_to_your_favicon.ico" type="image/x-icon"> 
+    <!-- Jika Anda menggunakan file .ico untuk favicon, gunakan `type="image/x-icon"`. 
+    Jika menggunakan ekstensi .png atau .jpg untuk favicon, pastikan untuk menggunakan `type="image/png"` 
+    atau `type="image/jpeg"`. -->
+</head>
+<body>
+
+    <!-- Audio background dan bell sound -->
+    <audio id="background-music" src="sound/backsound.mp3" loop autoplay></audio>
+    <audio id="bell-sound" src="sound/bell.mp3"></audio>
+
+    <!-- Header halaman, judul game -->
+    <header>
+        <button id="speaker-toggle" aria-label="Toggle sound">
+            <i id="speaker-icon" class="fas fa-volume-mute"></i>
+        </button>
+        <div class="judul" id="judul">
+            <img src="images/judul-copy.png" alt="judul">
+        </div>
+    </header>    
+
+    <!-- Main content, yang berisi kartu dan tombol start -->
+    <main>
+        <section class="card-container" id="card-container">
+            <!-- Kartu tunggal untuk menampilkan kata "Start" -->
+            <div class="card" id="single-card">
+                <div class="card-inner">
+                    <div class="card-front"></div>
+                    <div class="card-back">Click Start</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Timer yang menunjukkan waktu yang tersisa -->
+        <div class="timer" id="timer">Time Remaining: 00:00:10</div>
+        <!-- Tombol untuk memulai game -->
+        <button id="start-btn" aria-label="Start the game">Start</button>
+    </main>
+
+    <!-- Footer halaman, berisi informasi tentang pembuat game -->
+    <footer>
+        <p>&copy; Flashcard made by Azh punya Bunda Hira.</p>
+    </footer>
+
+    <!-- Menautkan file JavaScript eksternal -->
+    <script src="script.js"></script>
+</body>
+</html>
