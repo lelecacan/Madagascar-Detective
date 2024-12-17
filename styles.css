@@ -50,6 +50,7 @@ header {
 
 .judul img {
     margin-top: 100px;
+    margin-bottom: 100px;
     object-fit: contain; /* Menjaga proporsi gambar */
     max-width: 100%; /* Membuat gambar responsif */
     transition: transform 0.4s ease-in-out; /* Transisi lembut untuk hover */
