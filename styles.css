@@ -1,7 +1,7 @@
 body {
     font-family: Arial, sans-serif; /* Mengatur font untuk seluruh halaman */
     text-align: center; /* Menengahkan teks di seluruh halaman */
-    background-image: url("images/landing page.png"); /* Menambahkan gambar latar belakang */
+    background-image: url("images/tampilan web.png"); /* Menambahkan gambar latar belakang */
     background-size: cover; /* Mengatur gambar latar agar menutupi seluruh halaman */
     background-position: center; /* Menempatkan gambar latar di tengah */
     background-repeat: no-repeat; /* Menghindari pengulangan gambar latar */

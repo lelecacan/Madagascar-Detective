@@ -231,9 +231,12 @@ function startTimer() {
         timeRemaining--; // Mengurangi waktu setiap detik
         timerElement.textContent = formatTime(timeRemaining); // Memperbarui tampilan waktu
 
+        if (timeRemaining === 3) { // Jika waktu tersisa 3 detik
+            bellSound.play(); // Memutar suara bell
+        }
+
         if (timeRemaining <= 0) { // Jika waktu habis
             clearInterval(timerInterval); // Menghentikan timer
-            bellSound.play(); // Memutar suara bel
             enableReset(); // Mengaktifkan tombol reset
         }
     }, 1000); // Timer berfungsi setiap 1000ms (1 detik)
