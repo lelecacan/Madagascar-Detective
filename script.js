@@ -209,7 +209,7 @@ function startGame() {
             // 10: Nilai offset dasar, memastikan kartu pertama mulai dari 10px dari atas layar.
         } else {
             // Pada perangkat desktop (non-mobile), kartu akan digeser ke kanan
-            currentCard.style.transform = `translateX(${visibleCount * 120 + 30}px)`; // Offset lebih lebar pada desktop
+            currentCard.style.transform = `translateX(${visibleCount * 150 + 100}px)`; // Offset lebih lebar pada desktop
             // Penjelasan angka:
             // 120: Menentukan seberapa jauh kartu digeser ke kanan setiap kali ditampilkan (berdasarkan urutan).
             // 30: Nilai offset dasar, memastikan kartu pertama mulai dari 30px dari kiri layar.
