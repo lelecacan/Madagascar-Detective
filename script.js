@@ -231,7 +231,7 @@ function startTimer() {
         timeRemaining--; // Mengurangi waktu setiap detik
         timerElement.textContent = formatTime(timeRemaining); // Memperbarui tampilan waktu
 
-        if (timeRemaining === 3) { // Jika waktu tersisa 3 detik
+        if (timeRemaining === 2) { // Jika waktu tersisa 3 detik
             bellSound.play(); // Memutar suara bell
         }
 
