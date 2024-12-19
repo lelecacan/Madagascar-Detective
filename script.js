@@ -1,10 +1,31 @@
 /* Array berisi objek yang mendefinisikan pasangan gambar untuk kartu permainan
     jadi kalau mau nambahin kartu disini di variable cards ini */
 const cards = [
-    { question: "images/1.png", answer: "images/2.png" },
-    { question: "images/3.png", answer: "images/4.png" }, 
-    { question: "images/5.png", answer: "images/6.png" }, 
-    { question: "images/7.png", answer: "images/8.png" }  
+    { question: "images/2.png", answer: "images/3.png" },
+    { question: "images/4.png", answer: "images/5.png" },
+    { question: "images/6.png", answer: "images/7.png" },
+    { question: "images/8.png", answer: "images/9.png" },
+    { question: "images/10.png", answer: "images/11.png" },
+    { question: "images/12.png", answer: "images/13.png" },
+    { question: "images/14.png", answer: "images/15.png" },
+    { question: "images/16.png", answer: "images/17.png" },
+    { question: "images/18.png", answer: "images/19.png" },
+    { question: "images/20.png", answer: "images/21.png" },
+    { question: "images/22.png", answer: "images/23.png" },
+    { question: "images/24.png", answer: "images/25.png" },
+    { question: "images/26.png", answer: "images/27.png" },
+    { question: "images/28.png", answer: "images/29.png" },
+    { question: "images/30.png", answer: "images/31.png" },
+    { question: "images/32.png", answer: "images/33.png" },
+    { question: "images/34.png", answer: "images/35.png" },
+    { question: "images/36.png", answer: "images/37.png" },
+    { question: "images/38.png", answer: "images/39.png" },
+    { question: "images/40.png", answer: "images/41.png" },
+    { question: "images/42.png", answer: "images/43.png" },
+    { question: "images/44.png", answer: "images/45.png" },
+    { question: "images/46.png", answer: "images/47.png" },
+    { question: "images/48.png", answer: "images/49.png" },
+    { question: "images/50.png", answer: "images/51.png" }
 ];
 
 /* Variabel untuk melacak status permainan dan interval timer */
@@ -20,7 +41,7 @@ const speakerIcon = document.getElementById("speaker-icon");
 const backgroundMusic = document.getElementById("background-music");
 
 // Setup untuk audio permainan
-let bellSound = new Audio("sound/bell.mp3"); // Suara bel yang diputar saat waktu habis
+let bellSound = new Audio("sound/bldug.mp3"); // Suara bel yang diputar saat waktu habis
 let isPlaying = false;
 
 /* Fungsi untuk mengacak urutan kartu */
@@ -203,7 +224,7 @@ function startGame() {
 function startTimer() {
     // Menentukan waktu permainan jadi kalian bisa nambahin waktu disini dalam hitungan detik 
     // jadi kalau mau nambah jadi 2 mnt ketik ubah value jadi 120
-    let timeRemaining = 10; 
+    let timeRemaining = 45; 
     timerElement.textContent = formatTime(timeRemaining); // Menampilkan waktu awal
 
     timerInterval = setInterval(() => { // Interval untuk mengurangi waktu setiap detik
